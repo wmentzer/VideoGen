@@ -96,19 +96,19 @@ void Frame::draw_frame(double t, Rectangle rec1, Rectangle rec2, Rectangle rec3,
 	const double pps = 80; // pixels per second
 	Rectangle newRec1 = rec1;
 	newRec1.x = rec1.x + t * pps;
-	newRec1.y = rec1.x + t * pps;
+	newRec1.y = rec1.y + t * pps;
 
 	Rectangle newRec2 = rec2;
-	newRec2.x = rec2.x + t * pps;
-	newRec2.y = rec2.x + t * pps;
+	newRec2.x = rec2.x - t * pps;
+	newRec2.y = rec2.y + t * pps;
 
 	Rectangle newRec3 = rec3;
 	newRec3.x = rec3.x + t * pps;
-	newRec3.y = rec3.x + t * pps;
+	newRec3.y = rec3.y - t * pps;
 
 	Rectangle newRec4 = rec4;
-	newRec4.x = rec4.x + t * pps;
-	newRec4.y = rec4.x + t * pps;
+	newRec4.x = rec4.x - t * pps;
+	newRec4.y = rec4.y - t * pps;
 
 	draw_rect(newRec1, newRec2, newRec3, newRec4);
 };
