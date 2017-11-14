@@ -18,7 +18,7 @@ public:
 	void draw_frame(double t, vector<Rectangle> rec);
 	bool outside_frame(int * x, int * y);
 	void clamp(int x, int y);
-	int getFPS() { return frames_per_second; };
+	double getFPS() { return frames_per_second; };
 	int getDuration() {return duration_in_seconds; };
 	unsigned char* getArray() { return (unsigned char*) frame; };
 

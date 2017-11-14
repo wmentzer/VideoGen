@@ -62,6 +62,6 @@ int main(int argc, char * argv[]) {
 	rec.push_back(r2);
 	rec.push_back(r3);
 	rec.push_back(r4);
-	
-create(f, rec);
+
+	create(f, rec);
 }
