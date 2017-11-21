@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Rectangle.h"
+
 #include <sstream>
 #include <sys/stat.h>
 #include <stdio.h>
@@ -15,7 +15,7 @@ public:
 	Frame() {};
 	~Frame() {};
 	void clear_frame();
-	void draw_frame(double t, vector<Rectangle> rec);
+	void draw_frame(double t, Image image);
 	bool outside_frame(int * x, int * y);
 	void clamp(int x, int y);
 	double getFPS() { return frames_per_second; };
